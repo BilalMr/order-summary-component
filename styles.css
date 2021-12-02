@@ -1,0 +1,170 @@
+/*
+ * Copyright © 2021 EPAM Systems, Inc. All Rights Reserved. All information contained herein is, and remains the
+ * property of EPAM Systems, Inc. and/or its suppliers and is protected by international intellectual
+ * property law. Dissemination of this information or reproduction of this material is strictly forbidden,
+ * unless prior written permission is obtained from EPAM Systems, Inc
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: hsl(225, 100%, 94%);
+    height: 100%;
+    width: 100%;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media screen and (min-width: 1280px){
+    body{
+        background-image: url(images/pattern-background-desktop.svg);
+    }
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 85%;
+    max-width: 360px;
+    height: 100%;
+    margin: 0 2rem;
+    /* border-radius: 1rem; */
+}
+
+.card-top{
+    width: 100%;
+    margin-bottom: -5px;
+}
+.card-top img{
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+}
+
+.card-body{
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius:  0 0 1rem 1rem;
+}
+
+.card-summary{
+    /* padding-bottom: 1rem; */
+    text-align: center;
+}
+
+.card-summary h1{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    padding-bottom: 1rem;
+}
+
+.card-summary p{
+    color: hsl(224, 23%, 55%);
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.card-pricing{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: .5rem 0;
+    border-radius: 5px;
+    margin: 1.5rem 0;
+}
+.card-pricing__icon{
+
+}
+
+.card-pricing__plan h2{
+    font-size: 1rem;
+    color: hsl(223, 47%, 23%);
+}
+
+.card-pricing__plan  p{
+    font-size: .9rem;
+    color: hsl(224, 23%, 55%);
+
+}
+
+.card-pricing__button a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 500;
+
+    transition: color .2s ease-in-out;
+}
+
+.card-pricing__button a:hover{
+    color: #766cf1;
+}
+
+.payment{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    padding: .9rem 2rem;
+    border: none;
+    width: 100%;
+    border-radius: .7rem;
+    font-family: 'Red Hat Display', sans-serif;
+    box-shadow: 0px 8px 18px hsl(225, 100%, 94%);
+    cursor: pointer;
+
+    transition: background-color .2s ease-in-out;
+} 
+
+.payment:hover{
+    background-color: #766cf1;
+}
+
+.cancel-payment{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: .9rem 2rem;
+    border: none;
+    width: 100%;
+    border-radius: .7rem;
+    background-color: transparent;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+
+    transition: background-color .2s ease-in-out;
+}
+
+.cancel-payment:hover{
+    color:hsl(223, 47%, 23%);
+}
